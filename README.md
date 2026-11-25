@@ -148,7 +148,7 @@ WHOIS was used during reconnaissance to retrieve publicly available domain regis
 
 
 
-![WHOIS reconnaissance](Screenshot%20().png)
+![WHOIS reconnaissance](Screenshot%20(707).png)
 
 ---
 
