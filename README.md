@@ -9,7 +9,7 @@ A hands-on web application penetration testing capstone documenting reconnaissan
 
 | Project Detail | Information |
 |---|---|
-| Prepared By | [Samuel Ayomide Adekoya |
+| Prepared By | Samuel Ayomide Adekoya |
 | Organization | Networkwalks |
 | Batch | B084 |
 | Project | Week 4 – Penetration Testing |
@@ -164,7 +164,7 @@ WhatWeb was used to fingerprint the target website and identify technologies use
 
 
 
-![WhatWeb results](Screenshot%20().png)
+![WhatWeb results](Screenshot%20(700).png)
 
 ---
 
@@ -180,7 +180,7 @@ Nslookup was used to investigate DNS resolution for the target domain.
 
 
 
-![Nslookup results](Screenshot%20().png)
+![Nslookup results](Screenshot%20(701).png)
 
 ---
 
@@ -213,9 +213,8 @@ These entries provided useful information about website directories and resource
 
 
 
-![cURL HTTP response](Screenshot%20().png)
+![cURL HTTP response](Screenshot%20(702).png)
 
-![Robots.txt contents](Screenshot%20().png)
 
 ---
 
@@ -230,7 +229,7 @@ WAFW00F was used to investigate whether the target website was protected by a We
 - Understand the available web application protection mechanisms.
 
 
-![WAFW00F results](Screenshot%20().png)
+![WAFW00F results](Screenshot%20(703).png)
 
 ---
 
@@ -246,7 +245,7 @@ DNSRecon was used to perform additional DNS reconnaissance and investigate avail
 
 
 
-![DNSRecon results](Screenshot%20().png)
+![DNSRecon results](Screenshot%20(704).png)
 
 ---
 
@@ -267,7 +266,7 @@ OWASP ZAP identified a SQL injection vulnerability during the assessment. The fi
 
 
 
-![OWASP ZAP vulnerability scan](Screenshot%20().png)
+![OWASP ZAP vulnerability scan](Screenshot%20(672).png)
 
 
 ---
@@ -285,9 +284,6 @@ Initial reconnaissance was conducted using WHOIS, WhatWeb, Nslookup, cURL, WAFW0
 The information gathered helped identify publicly exposed infrastructure and potential entry points.
 
 
-![Initial reconnaissance](Screenshot%20().png)
-
-
 ## 4.3 Identification of Exposed Entry Points
 
 The website's publicly accessible resources were examined, including its `robots.txt` file.
@@ -302,7 +298,7 @@ These paths provided useful leads for further investigation.
 
 
 
-![Exposed website paths](Screenshot%20().png)
+![Exposed website paths](Screenshot%20(705).png)
 
 
 ## 4.4 Patient Portal Authentication Analysis
@@ -315,7 +311,7 @@ During vulnerability testing, OWASP ZAP identified a SQL injection weakness affe
 
 
 
-![Patient portal login page](Screenshot%20().png)
+![Patient portal login page](Screenshot%20(678).png)
 
 
 
@@ -331,9 +327,9 @@ This demonstrated that the application did not adequately protect its authentica
 
 
 
-![SQL injection authentication bypass](Screenshot%20().png)
+![SQL injection authentication bypass](Screenshot%20(679).png)
 
-![Successful patient portal access](Screenshot%20().png)
+![Successful patient portal access](Screenshot%20(664).png)
 
 
 ## 4.6 Retrieval of the Three PDF Reports
@@ -344,7 +340,7 @@ These files were preserved for further investigation during Milestone 2.
 
 
 
-![Retrieved PDF report](Screenshot%20().png)
+![Retrieved PDF report](Screenshot%20(664).png)
 
 
 **Milestone 1 Deliverable:** Successful access to the restricted portal and retrieval of all three PDF laboratory reports.
@@ -368,8 +364,6 @@ The analysis established that the documents were password-protected.
 The encryption characteristics were investigated using available PDF inspection utilities.
 
 
-![PDF encryption analysis](Screenshot%20().png)
-
 ## 5.3 Password Recovery
 
 Password-recovery tools and wordlists were used to investigate the encrypted documents.
@@ -381,11 +375,11 @@ The third document required a different approach because its password format dif
 An alternative password-recovery approach was subsequently used, resulting in successful recovery of the third document's password.
 
 
-![First PDF password recovery](Screenshot%20().png)
+![First PDF password recovery](Screenshot%20(666).png)
 
-![Second PDF password recovery](Screenshot%20().png)
+![Second PDF password recovery](Screenshot%20(669).png)
 
-![Third PDF password recovery](Screenshot%20().png)
+![Third PDF password recovery](Screenshot%20(706).png)
 
 
 ## 5.4 Verification of Recovered Documents
@@ -395,11 +389,11 @@ After recovering the passwords, each document was opened to confirm that its con
 All three PDF reports were successfully recovered and opened.
 
 
-![First recovered PDF](Screenshot%20().png)
+![First recovered PDF](Screenshot%20(667).png)
 
-![Second recovered PDF](Screenshot%20().png)
+![Second recovered PDF](Screenshot%20(670).png)
 
-![Third recovered PDF](Screenshot%20().png)
+![Third recovered PDF](Screenshot%20(675).png)
 
 **Milestone 2 Deliverable:** Successful recovery and verification of all three encrypted PDF reports.
 
@@ -439,7 +433,7 @@ mediroza_db_backup_2019.sql
 The discovery indicated that a database backup had been placed in a publicly accessible web directory.
 
 
-![Exposed database backup filename](Screenshot%20().png)
+![Exposed database backup filename](Screenshot%20(680).png)
 
 
 ## 6.4 Discovery of Confidential Hospital Information
@@ -454,9 +448,9 @@ The investigation revealed information that answered the two Milestone 3 tasks:
 The exposure demonstrated the potential impact of leaving sensitive database backups accessible through a public web directory.
 
 
-![Employee salary information exposure](Screenshot%20().png)
+![Employee salary information exposure](Screenshot%20(676).png)
 
-![Shareholder information exposure](Screenshot%20().png)
+![Shareholder information exposure](Screenshot%20(677).png)
 
 **Milestone 3 Deliverable:** Identification and documentation of the exposed employee salary and shareholder information.
 
@@ -717,7 +711,7 @@ The assessment was performed against the authorized target with written permissi
 
 All testing activities were restricted to the agreed scope and conducted for educational and security assessment purposes.
 
-**Prepared By:** [Samuel Ayomide Adekoya]  
+**Prepared By:** Samuel Ayomide Adekoya  
 **Organization:** Networkwalks  
 **Project:** Mediroza General Hospital – Week 4 Penetration Testing  
-**Date:** [25-11-2026]
+**Date:** 25-11-2026
